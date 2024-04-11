@@ -1,8 +1,10 @@
 __pycache__/
+tmp/
 1.*
 *.json
+*.jsonl
 *.html
 *.xlsx
 
 keywords.py
-work.py
+work1.py
