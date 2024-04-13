@@ -58,6 +58,8 @@ def get_links(page, pub_name):
             data[pub_name].append(href_value)
             with jsonlines.open(file_path, mode='a') as writer:
                 writer.write({"pub_name": pub_name, "url": href_value})
+            if len(data[pub_name]) >= 500:
+                return None
 
     return True
 
